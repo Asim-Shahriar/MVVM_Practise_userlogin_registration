@@ -3,6 +3,7 @@ package com.example.mvvm_practise_userlogin_registration.viewModel;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 
 import androidx.lifecycle.ViewModel;
 
@@ -57,6 +58,9 @@ public class LoginViewModel extends ViewModel {
            userModel.setPassword(s.toString());
           }
       };
+  }
+  public void onLoginClicked(View view){
+
   }
 
 }
