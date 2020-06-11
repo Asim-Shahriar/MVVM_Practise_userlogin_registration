@@ -61,6 +61,19 @@ public class LoginViewModel extends ViewModel {
   }
   public void onLoginClicked(View view){
 
+   int errorCode=userModel.isValidData();
+   if(errorCode==0){
+    loginResultCallBack.onError("You must enter your Email address");
+
+   }else if(errorCode==1){
+    loginResultCallBack.onError("Your Email address is invalid");
+
+   }else if(errorCode==2){
+
+    loginResultCallBack.onError("You Password length must greater than 6 characters");
+   }else{
+       loginResultCallBack.onError("Login Success");
+   }
   }
 
 }

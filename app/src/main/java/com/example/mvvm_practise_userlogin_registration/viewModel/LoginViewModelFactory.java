@@ -1,4 +1,7 @@
 package com.example.mvvm_practise_userlogin_registration.viewModel;
 
-public class LoginViewModelFactory {
+import androidx.lifecycle.ViewModelProvider;
+
+public class LoginViewModelFactory extends ViewModelProvider.NewInstanceFactory {
+
 }
